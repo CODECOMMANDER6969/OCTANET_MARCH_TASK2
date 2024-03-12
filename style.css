@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif";
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: double;
+  color: white;
+  font-size: x-large;
+}
+
+body {
+  background-image: url(https://w.forfun.com/fetch/00/00cc7a52f883d48225c89681f849a385.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #a2b853;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(data:image/png;base64,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);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(https://cdn3.vectorstock.com/i/1000x1000/09/82/check-icon-vector-10850982.jpg);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
+}

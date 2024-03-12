@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="index.html">
+      <u><b> Home|</b></u>
+    </a>
+    <a href="main">
+      <u><b> Contacts|</b></u>
+    </a>
+    <a href="main">
+      <u><b> Sign In</b></u>
+    </a>
+
+    <div class="container">
+      <div class="todo-app">
+        <h2>
+          To-Do List
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbyzNwaSJ6DxkpagMs6jF5RIJWOE4pUcFtLBQjbFFiiM8CKjEmCkwheGrpGyPWxehnSP8&usqp=CAU"
+          />
+        </h2>
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder=" What's on your mind?"
+          />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
